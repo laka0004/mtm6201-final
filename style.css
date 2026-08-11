@@ -1,0 +1,190 @@
+:root {
+  --lrc-bg: #d8d4d4;
+  --lrc-dark: #343434;
+  --lrc-pink: #c7b7b9;
+  --lrc-accent: #e85d5d;
+  --lrc-blue: #159ed1;
+  --lrc-text: #222;
+  --lrc-radius: 0.25rem;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  color: var(--lrc-text);
+  background: #3d3d3d;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.45;
+}
+
+.site-header {
+  background: var(--lrc-dark);
+}
+
+.site-header .container {
+  background: var(--lrc-bg);
+}
+
+.navbar-brand {
+  background: white;
+  border-radius: 50%;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+}
+
+.nav-link {
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  background-color: var(--lrc-blue);
+  color: #000;
+}
+
+.hero {
+  background: var(--lrc-bg);
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.hero-title {
+  padding: 0.75rem;
+  text-align: center;
+  background: var(--lrc-pink);
+  font-size: 1.2rem;
+}
+
+.page-heading {
+  padding: 1rem 0;
+  background: var(--lrc-pink);
+  text-align: center;
+}
+
+.page-heading h1 {
+  margin: 0;
+  color: var(--lrc-accent);
+  font-size: 2rem;
+}
+
+.section-card,
+.program-card,
+.schedule-card {
+  background: #fff;
+  border: 1px solid #aaa;
+  border-radius: var(--lrc-radius);
+  padding: 1rem;
+}
+
+.section-card h2,
+.community-section h2 {
+  font-size: 1rem;
+}
+
+.section-card p {
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.event-card {
+  background: #ddd;
+  border-radius: 1rem;
+  padding: 0.9rem;
+  font-size: 0.8rem;
+}
+
+.community-section {
+  background: var(--lrc-bg);
+}
+
+.site-footer {
+  padding: 0.8rem 0;
+  background: var(--lrc-bg);
+  border-top: 1px solid #777;
+  font-size: 0.75rem;
+}
+
+.program-card {
+  position: relative;
+  height: 100%;
+}
+
+.program-card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.program-card h3 {
+  font-size: 1rem;
+  margin: 0.6rem 0 0.25rem;
+}
+
+.program-card a,
+.back-link {
+  color: #111;
+  text-decoration: none;
+}
+
+.program-card a:hover,
+.program-card a:focus,
+.back-link:hover,
+.back-link:focus {
+  text-decoration: underline;
+}
+
+.category-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.category-links a {
+  color: #111;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.category-links a:hover,
+.category-links a:focus {
+  color: var(--lrc-accent);
+}
+
+.schedule-card {
+  background: var(--lrc-pink);
+  border: 0;
+  border-radius: 2rem;
+}
+
+.schedule-card h2 {
+  font-size: 1.4rem;
+}
+
+@media (min-width: 768px) {
+  .hero-title {
+    font-size: 1.5rem;
+  }
+
+  .page-heading h1 {
+    font-size: 2.3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1100px;
+  }
+
+  body {
+    font-size: 1rem;
+  }
+}
+#about-program,
+#about-program + p,
+#related-title {
+    color: #ffffff;
+}

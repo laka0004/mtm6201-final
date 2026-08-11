@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Lansdowne Recreation Centre">
+  <title>Lansdowne Recreation Centre | Home</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar navbar-expand-md navbar-light" aria-label="Main navigation">
+        <a class="navbar-brand" href="index.html">LRC</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="programs.html"><i class="fa-solid fa-list"></i> Programs</a></li>
+            <li class="nav-item"><a class="nav-link" href="#schedule"><i class="fa-regular fa-calendar"></i> Schedule</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact"><i class="fa-solid fa-phone"></i> Contact</a></li>
+          </ul>
+          <form class="d-flex ms-md-2" role="search">
+            <label class="visually-hidden" for="site-search">Search</label>
+            <input class="form-control form-control-sm" id="site-search" type="search" placeholder="Search">
+          </form>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <picture>
+        <source media="(min-width: 992px)" srcset="images/hero-large.jpg">
+        <source media="(min-width: 576px)" srcset="images/hero-medium.jpg">
+        <img src="images/hero-small.jpg" class="img-fluid w-100" alt="Lansdowne Recreation Centre exterior">
+      </picture>
+      <div class="hero-title">Welcome to Lansdowne Recreation Centre</div>
+    </section>
+
+    <section class="py-4" aria-labelledby="home-intro">
+      <div class="container">
+        <h1 id="home-intro" class="visually-hidden">Lansdowne Recreation Centre</h1>
+        <div class="row g-4">
+          <div class="col-12 col-md-6">
+            <div class="section-card h-100">
+              <h2>Featured Programs</h2>
+              <div class="row g-2">
+                <div class="col-4">
+                  <img src="images/fitness-small.jpg" srcset="images/fitness-small.jpg 400w, images/fitness-large.jpg 800w"
+                    sizes="(min-width: 768px) 30vw, 30vw" class="img-fluid" alt="Fitness program">
+                  <p>Fitness</p>
+                </div>
+                <div class="col-4">
+                  <img src="images/swimming-small.jpg" srcset="images/swimming-small.jpg 400w, images/swimming-large.jpg 800w"
+                    sizes="(min-width: 768px) 30vw, 30vw" class="img-fluid" alt="Swimming program">
+                  <p>Swimming</p>
+                </div>
+                <div class="col-4">
+                  <img src="images/yoga-small.jpg" srcset="images/yoga-small.jpg 400w, images/yoga-large.jpg 800w"
+                    sizes="(min-width: 768px) 30vw, 30vw" class="img-fluid" alt="Yoga program">
+                  <p>Yoga</p>
+                </div>
+              </div>
+              <a class="btn btn-sm btn-outline-dark" href="programs.html">View all programs</a>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6" id="schedule">
+            <div class="section-card h-100">
+              <h2>Upcoming Events</h2>
+              <article class="event-card">
+                <p><strong>July 20</strong><br>Family Fun Day<br>10:00 AM – 3:00 PM</p>
+                <p>Games, crafts, music, food trucks, and activities for the whole family.</p>
+                <a href="#contact">Register Now</a>
+              </article>
+              <a class="btn btn-sm btn-outline-dark mt-3" href="#schedule">View all events</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="community-section py-4" id="contact" aria-labelledby="community-title">
+      <div class="container">
+        <h2 id="community-title">Helping our community stay active, healthy and connected.</h2>
+        <address class="mb-0">
+          <i class="fa-solid fa-location-dot"></i> 123 Recreation Ave, Ottawa, ON<br>
+          <i class="fa-solid fa-phone"></i> (613) 000-0000<br>
+          <i class="fa-solid fa-envelope"></i> info@lrc.ca
+        </address>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="mb-0">&copy; 2026 Lansdowne Recreation Centre. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
